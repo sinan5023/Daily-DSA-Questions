@@ -1,7 +1,12 @@
+// Check if Two Strings are Anagrams or not in JavaScript?
+//input : text1:gum , text2: mug
+//output : the string is an anagram 
+
+
 public class anagram {
     public static void main(String[] args) {
-        String txt1 = "gum";
-        String txt2 = "mjm";
+        String txt1 = "python";
+        String txt2 = "typhon";
         int count = 0;
         if(txt1.length()==txt2.length()){
 
