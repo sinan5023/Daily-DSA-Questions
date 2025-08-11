@@ -5,8 +5,8 @@
 
 public class anagram {
     public static void main(String[] args) {
-        String txt1 = "python";
-        String txt2 = "typhon";
+        String txt1 = "malayalam";
+        String txt2 = "malayalam";
         int count = 0;
         if(txt1.length()==txt2.length()){
 
