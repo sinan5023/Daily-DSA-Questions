@@ -14,20 +14,25 @@ import java.util.Collections;
 public class DuplicateSubarrays {
     public static void main(String[] args) {
 
-        ArrayList <Integer> arr = new ArrayList<>(Arrays.asList(4, 3, 2, 4, 1, 3, 2, 2,1));
+        ArrayList <Integer> arr = new ArrayList<>(Arrays.asList(4, 3, 2, 4));
+        int size = arr.size();
         ArrayList <ArrayList<Integer>> mainarray = new ArrayList<>();
-        for (int i = 0; i < arr.size(); i++) {
+        for (int i = 0; i <arr.size(); i++) {
             ArrayList <Integer> temp = new ArrayList<>();
             temp.add(arr.get(i));
-            for (int j = i+1; j < arr.size(); j++) {
-                    if (arr.get(i)==arr.get(j)) {
+            for (int j = 0; j <arr.size(); j++) {
+                    if (i==j) {
+                        
+                    }
+                    else{
+                        if (arr.get(i)==arr.get(j)) {
                         temp.add(arr.get(j)); 
+                    }
                     }
             }
             mainarray.add(temp);
             arr.removeAll(Collections.singleton(arr.get(i)));
         }
-        System.out.println(arr);
         System.out.println(mainarray);
     }
 }
