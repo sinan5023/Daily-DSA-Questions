@@ -4,7 +4,7 @@ public class day11 {
 
     public static void main(String[] args) {
           int sum =0;  
-          int number =999999999;
+          int number =12;
         for (int k = 0; k < 4; k++) {
           sum = 0;
 
