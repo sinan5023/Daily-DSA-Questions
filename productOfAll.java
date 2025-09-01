@@ -1,7 +1,8 @@
+// Given an array of integers, return a new array where each element is the product of all other elements. Do not use division.
 
+// Input: [1,2,3,4] → Output: [24,12,8,6]
 import java.util.ArrayList;
 import java.util.Arrays;
-
 public class productOfAll {
 
     public static void main(String[] args) {
