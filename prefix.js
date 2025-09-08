@@ -4,10 +4,9 @@
 // Input: words = ["facebook", "face", "factory", "fast", "dog"], prefix = "fa"
 // Output: ["facebook", "face", "factory", "fast"]
 let arr = ["facebook", "face", "factory", "fast", "dog"]
-let prefix = 'face'
+let prefix = 'fac'
 
 let firstTwo = arr.map(str => str.slice(0,prefix.length));
-console.log(firstTwo)
 for (let i = 0; i < arr.length; i++) {
     if(firstTwo[i]==prefix){
         console.log(arr[i])
